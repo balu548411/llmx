@@ -18,6 +18,7 @@ class OpenAITextGenerator(TextGenerator):
         azure_endpoint: str = None,
         model: str = None,
         models: Dict = None,
+        base_url: str=None,
     ):
         super().__init__(provider=provider)
         self.api_key = api_key or os.environ.get("OPENAI_API_KEY", None)

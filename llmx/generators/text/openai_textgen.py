@@ -34,6 +34,7 @@ class OpenAITextGenerator(TextGenerator):
             "organization": organization,
             "api_version": api_version,
             "azure_endpoint": azure_endpoint,
+            "base_url": base_url,
         }
         # remove keys with None values
         self.client_args = {k: v for k,
